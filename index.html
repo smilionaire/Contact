@@ -6,29 +6,29 @@
 </head>
 <body>
 	<h1>CONTACT FORM</h1>
-	<form id="form">
+	<form id="form" method="post" action="email.php">
 		<p>
 			<b>Name:<br>
-			<input type="text" name="Name" placeholder="Enter your name" id="a1">
+			<input type="text" name="name" placeholder="Enter your name" id="a1" required>
 		</p>
 		<p>
 			<b>Address:
 			<br>
-			<input type="text" name="Address" placeholder="Enter your address" id="a1">
+			<input type="text" name="address" placeholder="Enter your address" id="a1" required>
 		</p>
 		<p>
 			<b>Phone:
 			<br>
-			<input type="text" name="Phone" placeholder="Enter your phone number" id="a1">
+			<input type="text" name="phone" placeholder="Enter your phone number" id="a1" required>
 		</p>
 		<p>
 			<b>Email:
 			<br>
-			<input type="email" name="Email" placeholder="Enter your email-id" id="a1">
+			<input type="email" name="email" placeholder="Enter your email-id" id="a1" required>
 		</p>
 		<p>
-			<textarea cols="50" rows="10"></textarea>
-			<input type="button" name="" value="send message">
+			<textarea id="message" name="message" cols="50" rows="10" required></textarea>
+			<input type="button" name="submit" value="send message">
 	</form>
 
 </body>
